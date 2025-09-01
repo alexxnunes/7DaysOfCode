@@ -1,11 +1,13 @@
-let seguir = prompt("Qual área quer seguir front-end ou back-end?");
+let seguir = prompt("Você quer seguir para a área de Front-End ou para a área de Back-End?");
 
 if (seguir == "front-end") {
-  prompt("Prefere aprender React ou Vue?");
+  prompt("Você quer aprender React ou aprender Vue?");
 } else {
-  prompt("Prefere aprender C# ou Java?");
+  prompt("Você quer aprender C# ou aprender Java?");
 }
   
+let escolha = prompt("Você quer seguir se especializando na área escolhida ou seguir se desenvolvendo para se tornar Fullstack?");
+
 let tecnologias = [];
 
 let tecnologia = prompt("Qual tecnologia você gostaria de aprender?");
