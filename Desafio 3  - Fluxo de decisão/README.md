@@ -36,7 +36,7 @@ while (mais) {
 alert("Você escolheu as seguintes tecnologias: " + tecnologias.join(", "));
 
 
-- Codigo abaixo corrigido e feito alterações por IA.
+- Código abaixo corrigido e aprimorado com a ajuda de IA.
 
 // 1. Escolher a área
 let area = prompt("Você quer seguir para a área de Front-End ou para a área de Back-End?");
@@ -90,7 +90,7 @@ if (tecnologias.length > 0) {
   alert("Você não informou nenhuma tecnologia extra.");
 }
 
-- Codigo selecionando as opções em vez de prompt
+- Código adaptado para que as escolhas sejam feitas através de seleções (select) no HTML, mantendo apenas o prompt para inserir tecnologias extras
 
 // Atualiza as opções da tecnologia inicial conforme a área
 document.getElementById("area").addEventListener("change", function() {
