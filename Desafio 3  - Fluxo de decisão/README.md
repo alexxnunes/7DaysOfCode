@@ -92,4 +92,4 @@ if (tecnologias.length > 0) {
 
 - Código adaptado para que as escolhas sejam feitas através de seleções (select) no HTML, mantendo apenas o prompt para inserir tecnologias extras
 
-https://pastebin.com/embed_js/YwGrpXi
+<script src="https://pastebin.com/embed_js/YwGrpXit"></script>
