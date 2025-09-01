@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Escolha de Tecnologias</title>
+</head>
+<body>
+  <h2>Qual área você quer seguir?</h2>
+  <select id="area">
+    <option value="">-- Selecione --</option>
+    <option value="front-end">Front-End</option>
+    <option value="back-end">Back-End</option>
+  </select>
+
+  <h2>Qual tecnologia você quer aprender?</h2>
+  <select id="tecnologiaInicial">
+    <option value="">-- Selecione --</option>
+    <option value="React">React</option>
+    <option value="Vue">Vue</option>
+    <option value="C#">C#</option>
+    <option value="Java">Java</option>
+  </select>
+
+  <h2>O que você prefere?</h2>
+  <select id="especializacao">
+    <option value="">-- Selecione --</option>
+    <option value="especializar">Seguir se especializando</option>
+    <option value="fullstack">Se tornar Fullstack</option>
+  </select>
+
+  <br><br>
+  <button onclick="confirmarEscolhas()">Confirmar</button>
+
+  <script>
+    function confirmarEscolhas() {
+      let area = document.getElementById("area").value;
+      let tecnologiaInicial = document.getElementById("tecnologiaInicial").value;
+      let especializacao = document.getElementById("especializacao").value;
+
+      if (!area || !tecnologiaInicial || !especializacao) {
+        alert("Por favor, selecione todas as opções.");
+        return;
+      }
+
+      // Mostra escolhas principais
+      alert("Você escolheu a área " + area +
+            ", a tecnologia " + tecnologiaInicial +
+            " e prefere " + especializacao + ".");
+
+      // Agora começa a parte dos prompts de tecnologias extras
+      let tecnologias = [];
+      let mais = true;
+
+      while (mais) {
+        let tecnologia = prompt("Qual outra tecnologia você gostaria de aprender?");
+        if (tecnologia) {
+          tecnologias.push(tecnologia);
+        }
+        mais = confirm("Quer adicionar mais alguma tecnologia?");
+      }
+
+      if (tecnologias.length > 0) {
+        alert("Você escolheu também: " + tecnologias.join(", "));
+      } else {
+        alert("Nenhuma tecnologia extra foi adicionada.");
+      }
+    }
+  </script>
+</body>
+</html>
