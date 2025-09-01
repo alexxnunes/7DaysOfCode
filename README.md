@@ -24,7 +24,7 @@ Desafio 1 - Operações Booleanas.
 
 Desafio 2 - Variaveis
 
-https://7-days-of-code-lpvi3xact-alexxnunes-projects.vercel.app/
+https://7-days-of-code-dusky.vercel.app/
 
 
 #7DaysOfCode
