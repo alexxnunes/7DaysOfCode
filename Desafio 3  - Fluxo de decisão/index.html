@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projeto</title>
+    <meta name="description" content="Página inicial limpa e minimalista." />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="color-scheme" content="light dark" />
+    <style>
+      :root {
+        --bg: #fff;
+        --fg: #111;
+        --max: 72rem;
+        --pad: 1rem;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root { --bg: #0b0b0b; --fg: #f2f2f2; }
+      }
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto,
+              "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+        background: var(--bg);
+        color: var(--fg);
+      }
+      .container { max-width: var(--max); margin-inline: auto; padding: var(--pad); }
+      header, main, footer { display: block; }
+      header { padding-block: 1rem; }
+      footer {
+        padding-block: 2rem;
+        font-size: .9rem;
+        border-top: 1px solid #e5e5e5;
+      }
+      @media (prefers-color-scheme: dark) { footer { border-top-color: #222; } }
+      a { color: inherit; text-decoration: underline; text-underline-offset: .2em; }
+      button, input, textarea, select { font: inherit; color: inherit; }
+    </style>
+  </head>
+  <body>
+    <header class="container" role="banner" aria-label="Cabeçalho do site">
+      <nav aria-label="Principal">
+        <a href="/">Início</a>
+      </nav>
+    </header>
+
+    <main class="container" id="conteudo" tabindex="-1">
+      <h1>Olá, mundo 👋</h1>
+      <p>Este é um template <strong>HTML5</strong> limpo para começar rápido.</p>
+    </main>
+
+    <footer class="container" role="contentinfo">
+      <p>&copy; <span id="ano"></span> Seu Nome.</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
