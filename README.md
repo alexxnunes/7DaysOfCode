@@ -26,5 +26,8 @@ Desafio 2 - Variaveis
 
 https://7-days-of-code-dusky.vercel.app/
 
+Desafio 3 - Fluxo de decisão
+
+7-days-of-code-git-desafio-3-alexxnunes-projects.vercel.app
 
 #7DaysOfCode
