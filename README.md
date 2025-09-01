@@ -24,7 +24,7 @@ Desafio 1 - Operações Booleanas.
 
 Desafio 2 - Variaveis
 
-https://7-days-of-code-dusky.vercel.app/
+https://7-days-of-code-alexxnunes-projects.vercel.app/
 
 Desafio 3 - Fluxo de decisão
 
